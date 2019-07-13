@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>eBay Search Link Generator</title>
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <div class="row pt-4 pb-4">
+          <div class="col-md">
+            <h1>
+              <a
+                class="site-heading"
+                href="https://adamrosloniec.github.io/ebay-search-link-generator/"
+                title="eBay Search Link Generator"
+                >eBay Search Link Generator</a
+              >
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <form>
+              <div class="form-group">
+                <h2 class="h6 pb-3">
+                  Paste list sellers here:
+                </h2>
+                <textarea class="form-control mb-4" id="textarea"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="col-md">
+            <h3 class="h6 pb-3">Found sellers: <strong id="count-sellers"></strong></h3>
+            <h4 class="h6 pb-1">Your link is here:</h4>
+            <p>
+              <code id="link-display">&nbsp;</code>
+            </p>
+            <p>
+              <button type="button" id="generate-link" class="btn btn-primary">
+                Generate link
+              </button>
+              <button type="button" id="link-copy" class="btn btn-success ml-1">
+                Copy link
+              </button>
+              <span id="link-copied" class="alert alert-success ml-1" role="alert">
+                Link copied!
+              </span>
+            </p>
+            <div class="pt-4">
+              <h4 class="h6 pb-1">
+                List of accepted formats:
+              </h4>
+              <p>
+                <samp>
+                  one <br />
+                  seller <br />
+                  per <br />
+                  line
+                </samp>
+              </p>
+              <p>
+                <samp>
+                  one, <br />
+                  seller, <br />
+                  per, <br />
+                  line, <br />
+                  with, <br />
+                  commas,
+                </samp>
+              </p>
+              <p>
+                <samp>
+                  comma,sepparated,sellers
+                </samp>
+              </p>
+              <p>
+                <samp>
+                  "comma","sepparated","sellers","with","double-quotes"
+                </samp>
+              </p>
+              <p>
+                <samp>
+                  'comma','sepparated','sellers','with','single-quotes'
+                </samp>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-md">
+            <p class="text-md-left text-center">
+              <small>
+                <strong>eBay Search Link Generator</strong> is open source project. <br />Created for fun by
+                <a target="blank" rel="nofollow noopener" href="https://github.com/adamrosloniec/">Adam Rosloniec</a>.
+                <br />
+                You can see code on
+                <a
+                  target="blank"
+                  rel="nofollow noopener"
+                  href="https://github.com/adamrosloniec/ebay-search-link-generator/"
+                  >GitHub</a
+                >.
+              </small>
+            </p>
+          </div>
+          <div class="col-md">
+            <p class="text-md-right text-center">
+              <small> eBay is a trademark of eBay Inc.</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bundle.min.js"></script>
+  </body>
+</html>

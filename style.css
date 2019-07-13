@@ -1,0 +1,26 @@
+#link-copied {
+  opacity: 0;
+  transition: 0.3s all;
+}
+#link-copied.active {
+  opacity: 1;
+}
+a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+code,
+kbd,
+pre,
+samp {
+  background-color: whitesmoke;
+  width: 100%;
+  display: block;
+  padding: 0.5em;
+  font-size: 0.8em;
+}

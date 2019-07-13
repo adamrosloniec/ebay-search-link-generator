@@ -1,0 +1,20 @@
+{
+  "name": "ebay-search-link-generator",
+  "version": "1.0.0",
+  "main": "bundle.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel": "^6.23.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "devDependencies": {
+    "babel-minify": "^0.5.0",
+    "babel-preset-minify": "^0.5.0"
+  },
+  "scripts": {
+    "build": "babel bundle.js --out-file bundle.min.js"
+  },
+  "author": "adamrosloniec",
+  "license": "MIT"
+}
